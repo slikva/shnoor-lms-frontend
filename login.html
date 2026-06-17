@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shnoor Login</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+</head>
+
+<body>
+     <nav class="navbar" >
+        <div class="logo">
+            <img src="./images/shnoor_international_logo.jpeg" alt="Shnoor">
+        </div>
+        <button class="menu-toggle" id="menuToggle" aria-label="Open Navigation Menu" type="button">
+            <i class="bi bi-list"></i>
+        </button>
+        <div class="nav-links " style="position: sticky; top: 0;"">
+            <a href="./index.html">Home</a>
+            <a href="./index.html">How It Works</a>
+            <a href="./index.html">Features</a>
+            <a href="./index.html">About</a>
+            <a href="./index.html">Training</a>
+            <a href="./index.html#contact">Contact</a>
+        </div>
+        <div class="nav-actions">
+            <button id="themeToggle" class="icon-btn" aria-label="Toggle Dark Mode" type="button">
+                <i class="bi bi-sun"></i>
+            </button>
+            <a href="./login.html" class="login">Log In</a>
+            
+        </div>
+    </nav>
+    <main>
+        <div class="login-container" style="display: flex; align-content: center;">
+            <div class="login-card" style="margin: 0 auto;">
+                <div class="badge">
+                    <i class="bi bi-stars"></i>
+                    SYSTEM ACCESS
+                </div>
+                <h1>Sign in to your account</h1>
+                <p>
+                    Enter your credentials to access your dashboard.
+                </p>
+            <form onsubmit="loginUser(event)">
+                    <label>Email Address</label>
+                    <div class="input-box">
+                        <i class="bi bi-envelope"></i>
+                        <input type="email" placeholder="Enter your email" required id="email">
+                    </div>
+                    <label>Password</label>
+                    <div class="input-box">
+                        <i class="bi bi-lock"></i>
+                        <input type="password" placeholder="Enter your password" required id="password">
+                        <i class="bi bi-eye"></i>
+                    </div>
+                    <div class="options">
+                        <div>
+                           <input type="checkbox" id="remember">
+                            <label for="remember">Remember me</label>
+                        </div>
+                        <a href="#">
+                            Forgot password?
+                        </a>
+                    </div>
+                    <button class="login-btn" type="submit">
+                        <a href="./welcome.html" style="color: white; text-decoration: none;">
+                            Sign In
+                        </a>
+                    </button>
+                    <div class="divider">
+                        <span>or</span>
+                    </div>
+                </form>
+                <div class="signup">
+                    Don't have an account?
+                    <a href="./signup.html">
+                        Sign up
+                    </a>
+                </div>
+            </div>
+        </div>
+        <section class="footer" id="contact">
+            <div class="footer-container">
+                <div class="footer-col">
+                    <img src="./images/shnoor.png" alt="Shnoor Logo" class="footer-logo">
+                    <p style="font-size: 18px;">
+                        Transform your learning process with a platform that
+                        supports training paths, progress visibility and
+                        skill validation in one consistent experience.
+                    </p>
+                </div>
+                <div class="footer-col">
+                    <h2>Quick Links</h2>
+                    <a href="./index.html#home" >Home</a>
+                    <a href="./index.html#hw">How It Works</a>
+                    <a href="./index.html#f">Features</a>
+                    <a href="./index.html#home">Training</a>
+                    <a href="./index.html#contact">Contact</a>
+                </div>
+                <div class="footer-col">
+                    <h2>Contact & Support</h2>
+                    <p>info@shnoor.com</p>
+                    <p>+91 9429694298</p>
+                    <p>support@shnoor.com</p>
+                </div>
+            </div>
+            <div class="footer-col" style="display: flex; flex-direction: column; align-items: left; margin-left: 5%;">
+                <div class="icon-container" style="display: flex; gap: 1rem;">
+                    <a href="https://twitter.com/shnoor" aria-label="Twitter" ><i class="bi bi-twitter-x"></i></a>
+                    <a href="https://www.instagram.com/shnoor_international_llc/?hl=en" aria-label="Instagram" target="_blank"><i class="bi bi-instagram"></i></a>
+                    <a href="https://linkedin.com/company/shnoor" aria-label="LinkedIn" target="_blank"><i class="bi bi-linkedin"></i></a>
+                    
+                </div>
+                <div style="margin: 0 auto;"><p> © 2026 Shnoor International. All Rights Reserved.</p></div>
+            </div>
+        </section>
+        <script src="script.js"></script>
+    </main>
+</body>
+</html>
