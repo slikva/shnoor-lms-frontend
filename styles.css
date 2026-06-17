@@ -381,7 +381,10 @@ body{
 .dark-mode .login-content,
 .dark-mode .login-card,
 .dark-mode .crd,
-.dark-mode .footer{
+.dark-mode .footer
+.dark-mode .about-card
+.dark-mode .about-right
+.dark-mode .highlight-card{
     background:#1e293b;
     color:white;
 }
@@ -401,7 +404,8 @@ body,
 .stat-card,
 .workflow-card,
 .support-item,
-.mini-card{
+.mini-card
+.about-card{
     transition:0.4s ease;
 }
 
@@ -699,6 +703,76 @@ label{
 .dark-mode .signup-footer a{
     color:rgb(207,151,65);
 }
+.about-section{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:60px;
+    padding:100px 8%;
+}
+
+.about-left{
+    flex:1;
+}
+
+.about-left h2{
+    font-size:40px;
+    line-height:1.2;
+    color:black;
+    margin:20px 0;
+}
+
+.about-right{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+    gap:24px;
+}
+
+.about-card{
+    display:flex;
+    align-items:flex-start;
+    gap:20px;
+    background:rgb(250, 250, 250);
+    padding:15px;
+    border-radius:28px;
+    border:1px solid #e8edf5;
+    box-shadow:0 10px 20px rgba(0,0,0,0.05);
+}
+
+.about-card i{
+    font-size:24px;
+    color:rgb(207,151,65);
+}
+
+.about-card h4{
+    margin-bottom:8px;
+    color:#16395f;
+}
+
+.about-card p{
+    color:#64748b;
+}
+
+.highlight-card{
+    background:#eef2ff;
+}
+
+@media(max-width:768px){
+
+    .about-section{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .about-left h2{
+        font-size:32px;
+    }
+
+    .about-card{
+        text-align:left;
+    }
+}
 /* Mobile Responsive */
 
 @media screen and (max-width: 768px){
@@ -846,3 +920,124 @@ label{
     }
 }
 
+/* About Section Dark Mode */
+.dark-mode .about-section {
+    background: #0f172a;
+}
+
+.dark-mode .about-content h2,
+.dark-mode .about-content h3
+{
+    color: white;
+}
+
+.dark-mode .about-content p {
+    color: #cbd5e1;
+}
+
+.dark-mode .about-card ,
+.dark-mode .training-card{
+    background: #1e293b;
+    color: white;
+    border: 1px solid #334155;
+}
+
+.dark-mode .about-card h4,
+ .dark-mode .training-card h3,
+ .dark-mode .training-card p
+{
+    color: white;
+}
+
+.dark-mode .about-card p {
+    color: #cbd5e1;
+}
+
+.dark-mode .about-badge {
+    background: #1e293b;
+    color: rgb(207,151,65);
+    border: 1px solid rgb(207,151,65);
+}
+.dark-mode .about-left h2 {
+    color: white;
+}
+
+.training-section{
+    padding:100px 8%;
+    text-align:center;
+}
+
+.section-tag{
+    display:inline-block;
+    padding:8px 20px;
+    border:1px solid #bfc7ff;
+    border-radius:50px;
+    color:#4f46e5;
+    font-size:13px;
+    letter-spacing:3px;
+    margin-bottom:20px;
+}
+
+.training-section h2{
+    max-width:800px;
+    margin:0 auto 20px;
+    font-size:40px;
+    line-height:1.2;
+    font-weight:700;
+    color: black;
+}
+
+.training-subtitle{
+    max-width:800px;
+    margin:0 auto 60px;
+    color:#64748b;
+    font-size:20px;
+    line-height:1.7;
+}
+
+.training-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:30px;
+}
+
+.training-card{
+    background:#fff;
+    border:1px solid #e2e8f0;
+    border-radius:28px;
+    overflow:hidden;
+    box-shadow:0 4px 18px rgba(0,0,0,0.05);
+    transition:0.3s;
+}
+
+.training-card:hover{
+    transform:translateY(-6px);
+}
+
+.training-image{
+    padding:30px;
+    background:#f8fafc;
+}
+
+.training-image img{
+    width:180px;
+    height:auto;
+}
+
+.training-content{
+    padding:30px;
+    text-align:left;
+}
+
+.training-content h3{
+    margin-bottom:15px;
+    color:#0f172a;
+}
+
+.training-content p{
+    color:#64748b;
+    line-height:1.8;
+}
+.dark-mode .trd{
+    color: white;
+}

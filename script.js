@@ -52,7 +52,6 @@ try{
     alert("Server Connection Failed");
 }
 }
-
 const menuToggle = document.getElementById("menuToggle");
 const navLinks = document.querySelector(".nav-links");
 
